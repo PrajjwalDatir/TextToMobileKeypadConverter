@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <!-- default favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <title>Text to Magic Number</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+  <script>
+  const convertTextToNumber = () => {
+  const mapping = {
+    'a': 2,
+    'b': 22,
+    'c': 222,
+    'd': 3,
+    'e': 33,
+    'f': 333,
+    'g': 4,
+    'h': 44,
+    'i': 444,
+    'j': 5,
+    'k': 55,
+    'l': 555,
+    'm': 6,
+    'n': 66,
+    'o': 666,
+    'p': 7,
+    'q': 77,
+    'r': 777,
+    's': 7777,
+    't': 8,
+    'u': 88,
+    'v': 888,
+    'w': 9,
+    'x': 99,
+    'y': 999,
+    'z': 9999
+  }
+  let number = ''
+  let text = document.getElementById('textbox').value
+  for (let i = 0; i < text.length; i++) {
+    number += mapping[text[i]]
+  }
+  document.getElementById('result').innerHTML = number
+}
+  </script>
+</head>
+<body>
+  <!-- Create a textbox to take the user text input.
+  The textbox will be used to store the user input. -->
+  <form id="form" action="#" onsubmit="convertTextToNumber();return false">
+  <input type='text' id='textbox' placeholder='Enter text here'></input>
+  <button type='submit' id='submit' >Convert</button>
+  </form>
+  <!-- Create a div to display the converted number. -->
+  <div id='result'>
+    Magic
+  </div>
+  <!-- Create a button to convert the text to magic number.
+  The button will be used to convert the text to magic number. -->
+  <!-- Create a textbox to display the magic number.
+  The textbox will be used to display the magic number. -->
+</body>
+</html>

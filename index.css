@@ -1,0 +1,33 @@
+/* Center align everything */
+body {
+  text-align: center;
+}
+form {
+  display: inline-block;
+}
+button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #acddde;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+input[type=text] {
+  display: inline-block;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+/* Make it big colorful output text like button */
+#result {
+  padding: 10px;
+  background-color: #caf1de;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 20px;
+}
