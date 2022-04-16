@@ -39,6 +39,8 @@
   }
   let number = ''
   let text = document.getElementById('textbox').value
+  // convert to lowercase
+  text = text.toLowerCase()
   for (let i = 0; i < text.length; i++) {
     number += mapping[text[i]]
   }
@@ -47,6 +49,10 @@
   </script>
 </head>
 <body>
+  <!-- show /images/keyboard.png -->
+  <div id='keyboard'>
+    <img src='images/keyboard.png' alt='keyboard'>
+  </div>
   <!-- Create a textbox to take the user text input.
   The textbox will be used to store the user input. -->
   <form id="form" action="#" onsubmit="convertTextToNumber();return false">

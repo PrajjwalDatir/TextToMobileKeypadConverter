@@ -31,3 +31,8 @@ input[type=text] {
   margin: 5px;
   font-size: 20px;
 }
+/* make the image small size */
+img {
+  width: 15%;
+  height: 25%;
+}
