@@ -36,3 +36,10 @@ img {
   width: 15%;
   height: 25%;
 }
+/* make img bigger for mobile screen */
+@media only screen and (max-width: 600px) {
+  img {
+    width: 55%;
+    height: 75%;
+  }
+}
